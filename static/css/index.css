@@ -23,7 +23,7 @@ h2 span{
     background-position-y: 0, 180px;
     padding-left: 270px;
     margin-top: -50px;
-    background-image: url("../images/Pilot.png"), url("../images/Oval.png");
+    background-image: url("/static/img/Pilot.png"), url("/static/img/Oval.png");
 }
 #intruduction a{
     display: inline-block;
