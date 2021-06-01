@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/manageFlights.css">
+    <title>Manage flights</title>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Arrivals / Departures</a>
+            <a href="#">Tickets</a>
+            <a href="./myTickets">My tickets</a>
+            <a href="./administrator" class="open-tab">Administrator</a>
+            <a id="logout" href="#">Log out</a>
+        </nav>
+    </div>
+    <h1>Manage departures / arrivals</h1>
+    <table>
+        <tr>
+            <th>Departure date</th>
+            <th>Time</th>
+            <th>From</th>
+            <th>To</th>
+            <th class="button-column"></th>
+        </tr>
+        <tr>
+            <td>24.05.2021</td>
+            <td>8:30</td>
+            <td>Latvija</td>
+            <td>Vācija</td>
+            <td class="button-column"><button class="delete-button">Delete</button></td>
+        </tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="blank-row"><td colspan="5"></td></tr>
+        <tr class="add-row"><td colspan="5"><button class="add-button">Add</button></td></tr>
+    </table>
+    <a href="./administrator" class="cancel-button">Cancel</a>
+    <button class="save-button">Save</button>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

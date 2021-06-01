@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/statistics.css">
+    <title>Statistics</title>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Arrivals / Departures</a>
+            <a href="#">Tickets</a>
+            <a href="./myTickets">My tickets</a>
+            <a href="./administrator" class="open-tab">Administrator</a>
+            <a id="logout" href="#">Log out</a>
+        </nav>
+    </div>
+    <h1>Statistics</h1>
+    <div class="tree-menu">
+        <button class="level1">2021. gads</button>
+        <button class="level2">Aprīlis</button>
+        <button class="level2">Marts</button>
+        <button class="level2">Februāris</button>
+        <table class="level3">
+            <tr>
+                <th>Departure date</th>
+                <th>Time</th>
+                <th>Flight duration</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Airplane</th>
+                <th>Free seats</th>
+            </tr>
+            <tr>
+                <td>16.02.2021.</td>
+                <td>8:30</td>
+                <td>1:30</td>
+                <td>Latvija</td>
+                <td>Turcija</td>
+                <td>A220</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>05.02.2021.</td>
+                <td>14:30</td>
+                <td>1:52</td>
+                <td>Francija</td>
+                <td>Latvija</td>
+                <td>Boeing 737-800</td>
+                <td>13</td>
+            </tr>
+        </table>
+        <button class="level2">Maijs</button>
+        <button class="level1">2020. gads</button>
+        <button class="level1">2019. gads</button>
+    </div>
+    <a href="./administrator" class="cancel-button">Cancel</a>
+    <button id="export-json" class="export-button">Export .json</button>
+    <button id="export-csv" class="export-button">Export .csv</button>
+</body>
+</html>

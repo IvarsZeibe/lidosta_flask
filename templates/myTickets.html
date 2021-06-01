@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/myTickets.css">
+    <title>My tickets</title>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Arrivals / Departures</a>
+            <a href="#">Tickets</a>
+            <a href="./myTickets" class="open-tab">My tickets</a>
+            <a href="./administrator">Administrator</a>
+            <a id="logout" href="#">Log out</a>
+        </nav>
+    </div>
+    <h1>My tickets</h1>
+    <table>
+        <tr>
+            <th>Reservation Nr.</th>
+            <th>Departure date</th>
+            <th>Departure Time</th>
+            <th>Arrival date</th>
+            <th>Arrival Time</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Airplane</th>
+            <th class="button-column"></th>
+            <th class="button-column"></th>
+        </tr>
+        <tr>
+            <td>000000000</td>
+            <td>24.05.2021.</td>
+            <td>8:30</td>
+            <td>24.05.2021.</td>
+            <td>10:00</td>
+            <td>Latvija</td>
+            <td>Vācija</td>
+            <td>A220</td>
+            <td class="button-column"><button class="print-button">Print</button></td>
+            <td class="button-column"><button class="change-button">Change</button></td>
+        </tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+        <tr class="blank-row"><td colspan="10"></td></tr>
+    </table>
+</body>
+</html>

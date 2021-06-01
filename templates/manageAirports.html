@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/manageAirports.css">
+    <title>Manage airports</title>
+</head>
+<body>
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            <a href="/">Home</a>
+            <a href="#">Arrivals / Departures</a>
+            <a href="#">Tickets</a>
+            <a href="./myTickets">My tickets</a>
+            <a href="./administrator" class="open-tab">Administrator</a>
+            <a id="logout" href="#">Log out</a>
+        </nav>
+    </div>
+    <h1>Manage airports</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Abbreviation</th>
+            <th>Address</th>
+            <th class="button-column"></th>
+        </tr>
+        <tr>
+            <td>Lidosta Rīga</td>
+            <td>RIX</td>
+            <td>P133, Mārupe, LV-1053</td>
+            <td class="button-column"><button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Hartsfield-Jackson Atlanta International Airport</td>
+            <td>ATL</td>
+            <td>6000 N Terminal Pkwy, Atlanta, GA 30320, United States</td>
+            <td class="button-column"><button class="delete-button">Delete</button></td>
+        </tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="blank-row"><td colspan="4"></td></tr>
+        <tr class="add-row"><td colspan="4"><button class="add-button">Add</button></td></tr>
+    </table>
+    <a href="./administrator" class="cancel-button">Cancel</a>
+    <button class="save-button">Save</button>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

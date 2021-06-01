@@ -1,0 +1,202 @@
+*{
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    color: #2761FF;
+}
+h2 {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    color: #2F2F2F;
+}
+h2 span{
+    color: #2761FF;
+}
+#intruduction{
+    height: 589px;
+    background-repeat: no-repeat;
+    background-position: right bottom, right bottom;
+    background-position-y: 0, 180px;
+    padding-left: 270px;
+    margin-top: -50px;
+    background-image: url("../images/Pilot.png"), url("../images/Oval.png");
+}
+#intruduction a{
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 40px;
+    background-color: #2761FF;
+    color: white;
+    font-size: 22px;
+    width: 192px;
+    border-radius: 10px;
+}
+#intruduction a:hover{
+    cursor: pointer;
+    background-color: #3b6efa;
+}
+#intruduction a:active{
+    background-color: #5884fc;
+}
+
+#featured-airports{
+    background-color: #FAFAFA;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#featured-airports h3{
+    color: #373737cb;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+#featured-airports img{
+    margin-left: 200px;
+}
+#featured-airports img:last-child{
+    margin-left: 150px;
+}
+.current-featured-airports{
+    font-size: 18px;
+    margin-top: 60px;
+    cursor: pointer;
+    background: #FAFAFA;
+    border: none;
+    
+    color: #2761FF;
+}
+.not-featured-airports{
+    font-size: 15px;
+    margin-top: 60px;
+    margin-left: 40px;
+    cursor: pointer;
+    background: #FAFAFA;
+    border: none;
+    
+    color: #7D7D7D;
+}
+p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #7D7D7D;
+    margin-top: -25px;
+}
+#our-services{
+    text-align: center;
+    line-height: 200%;
+    padding-top: 100px;
+}
+#our-services h2, #our-services h3{
+    color: #2F2F2F;
+}
+#our-services h2{
+    font-size: 37px;
+}
+#our-services h3{
+    font-size: 24px;
+}
+#our-services p{
+    color: #7D7D7D;
+    font-size: 22px;
+}
+#our-services > p{
+    margin-bottom: 100px;
+}
+#our-services div:first-of-type{
+    margin-right: 50px;
+}
+#our-services div{
+    width: 310px;
+    height: 310px;
+    display: inline-block;
+    box-shadow: 0px 0px 40px 10px #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    padding: 50px;
+    position: relative;
+}
+#our-services div p{
+    font-size: 16px;
+}
+#our-services a{
+    color: #2761FF;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    position: absolute;
+    bottom: 50px;
+}
+#our-services a:hover{
+    text-decoration: underline;
+}
+#our-services a img{
+    vertical-align: text-bottom;
+}
+#our-services > img:last-child{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    background-color: #2761FF;
+    padding: 0px 100px 40px 100px;
+    vertical-align: middle;
+}
+#footer{
+    font-size: 18px;
+    color: white;
+    line-height: 200%;
+    font-weight: normal;
+}
+#footer span{
+    float: right;
+}
+#analyse-manage{
+    background-color: #FAFAFA;
+    text-align: center;
+    padding-top: 100px;
+}
+#analyse-manage h2{
+    color: #252525;
+    font-size: 37px;
+    margin: 0;
+}
+#analyse-manage a{
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    background-color: #2761FF;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 40px 20px 40px;
+    border: none;
+    border-radius: 10px;
+}
+#analyse-manage a:hover{
+    cursor: pointer;
+    background-color: #3b6efa;
+}
+#analyse-manage a:active{
+    background-color: #5884fc;
+}
+#analyse-manage a img{
+    vertical-align: text-bottom;
+    filter: brightness(0) invert(1);
+}
+#analyse-manage > img{
+    margin-bottom: 200px;
+}
