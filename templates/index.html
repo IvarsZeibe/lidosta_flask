@@ -14,23 +14,16 @@
 </head>
 
 <body>
-    <div id="header">
-        <img id="logo" src="static/img/Logo.png">
-        <nav>
-            <a href="/" class="open-tab">Home</a>
-            <a href="#">Arrivals / Departures</a>
-            <a href="#">Tickets</a>
-            <a href="./myTickets">My tickets</a>
-            <a href="./administrator">Administrator</a>
-            <a id="logout" href="#">Log out</a>
-        </nav>
-    </div>
+    
+    {% with selected="home" %}
+      {% include "header.html" %}
+    {% endwith %}
 
     <div id="intruduction">
         <h1>Aether X</h1>
         <h2>The Future of <span>Flight</span></h2>
         <p>Building global airport to airline network solutions</p>
-        <a href="#">Book now →</a>
+        <a href="./Tickets">Book now →</a>
     </div>
 
     <div id="featured-airports">
@@ -63,14 +56,14 @@
             <p>Track the arivals and departures of <br>
                 planes from airports all around the <br>
                 globe.</p>
-            <a href="#">Learn More <img src="static/img/arrow_forward_24px.svg" alt="arrow"></img></a>
+            <a href="./arrivalsDepartures">Learn More <img src="static/img/arrow_forward_24px.svg" alt="arrow"></img></a>
         </div>
         <div>
             <img src="static/img/Tickets.svg" alt="tickets">
             <h3>Tickets</h3>
             <p>Book a ticket from the best airlines in <br>
                 the world.</p>
-            <a href="#">Learn More <img src="static/img/arrow_forward_24px.svg" alt="arrow"></img></a>
+            <a href="./Tickets">Learn More <img src="static/img/arrow_forward_24px.svg" alt="arrow"></img></a>
         </div>
         <img src="static/img/Apple Macbook Pro 13_ Silver.png" alt="Macbook">
     </div>
@@ -89,6 +82,8 @@
         <br>
         Rīga, LV-1010 <span>© 2021 Aether X</span>
     </div>
+
+    {% include "loginRegisterWindow.html" %}
 
     <script src="static/js/script.js"></script>
 </body>

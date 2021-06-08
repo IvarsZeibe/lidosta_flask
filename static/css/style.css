@@ -21,13 +21,13 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
-#logout{
+#logout, #login{
     border: royalblue 1px solid;
     border-radius: 6px;
     padding: 5px 20px 5px 20px;
 }
 .open-tab{
-    background-image: url("../images/Rectangle.png");
+    background-image: url("../img/Rectangle.png");
     background-position: left bottom;
     background-repeat: no-repeat;
 }
@@ -82,4 +82,120 @@ nav a:hover{
 }
 .save-button:active{
     background-color: #a6e005;
+}
+#login-window, #register-window{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+#login-window form, #register-window form{
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  padding: 40px 40px 25px 40px;
+  width: 500px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+#login-window label, #register-window label{
+  color: black;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+#login-window span, #register-window span{
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  color: rgb(194, 2, 2);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+#login-window input, #register-window input{
+  float: right;
+  width: 300px;
+  height: 20px;
+  margin-bottom: 15px;
+  margin-top: -2px;
+  border: #E5E5E5 solid 2px;
+  border-radius: 5px;
+}
+.gray-link{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 17px;
+  color: gray;
+  text-decoration: none;
+  float: right;
+  margin-left: 50px;
+}
+.gray-link:hover{
+  text-decoration: underline;
+}
+#login-cancel, #register-cancel{
+  background-color: rgb(231, 229, 229);
+  box-shadow: 0px 5px 3px lightgray;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  padding: 3px 12px;
+  position: absolute;
+  bottom: 40px;
+  
+}
+.button-blue-border{
+  text-decoration: none;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  border: royalblue 1px solid;
+  border-radius: 6px;
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgb(231, 229, 229);
+}
+.button-blue-border:hover, #login-cancel:hover, #register-cancel:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.button-blue-border:active, #login-cancel:active, #register-cancel:active{
+  background-color: rgb(248, 247, 247);
+}
+.hidden{
+  display: none;
+}
+.clearer{
+  clear: both;
+}
+#footer{
+    background-color: #2761FF;
+    box-sizing: border-box;
+    padding: 0px 100px 40px 100px;
+    vertical-align: middle;
+}
+#footer{
+    font-size: 18px;
+    color: white;
+    line-height: 200%;
+    font-weight: normal;
+}
+#footer span{
+    float: right;
 }

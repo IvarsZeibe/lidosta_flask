@@ -9,17 +9,10 @@
     <title>Manage flights</title>
 </head>
 <body>
-    <div id="header">
-        <img id="logo" src="static/img/Logo.png">
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">Arrivals / Departures</a>
-            <a href="#">Tickets</a>
-            <a href="./myTickets">My tickets</a>
-            <a href="./administrator" class="open-tab">Administrator</a>
-            <a id="logout" href="#">Log out</a>
-        </nav>
-    </div>
+    
+    {% with selected="administrator" %}
+      {% include "header.html" %}
+    {% endwith %}
     <h1>Manage departures / arrivals</h1>
     <table>
         <tr>
@@ -47,6 +40,9 @@
     </table>
     <a href="./administrator" class="cancel-button">Cancel</a>
     <button class="save-button">Save</button>
+    
+    {% include "loginRegisterWindow.html" %}
+    
     <script src="static/js/script.js"></script>
 </body>
 </html>

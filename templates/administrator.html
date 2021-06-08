@@ -8,23 +8,20 @@
     <link rel="stylesheet" href="static/css/administrator.css">
     <title>Administrator</title>
 </head>
-<body>
-    <div id="header">
-        <img id="logo" src="static/img/Logo.png">
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">Arrivals / Departures</a>
-            <a href="#">Tickets</a>
-            <a href="./myTickets">My tickets</a>
-            <a href="./administrator" class="open-tab">Administrator</a>
-            <a id="logout" href="#">Log out</a>
-        </nav>
-    </div>
+ <body>
+    {% with selected="administrator" %}
+      {% include "header.html" %}
+    {% endwith %}
     <h1>Administrator</h1>
     <a href="./manageAirports">Manage airports</a>
     <br>
     <a href="./manageFlights">Manage flights</a>
     <br>
     <a href="./statistics">Statistics</a>
+    
+    
+    {% include "loginRegisterWindow.html" %}
+
+    <script src="static/js/script.js"></script>
 </body>
 </html>

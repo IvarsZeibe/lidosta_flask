@@ -9,17 +9,10 @@
     <title>My tickets</title>
 </head>
 <body>
-    <div id="header">
-        <img id="logo" src="static/img/Logo.png">
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">Arrivals / Departures</a>
-            <a href="#">Tickets</a>
-            <a href="./myTickets" class="open-tab">My tickets</a>
-            <a href="./administrator">Administrator</a>
-            <a id="logout" href="#">Log out</a>
-        </nav>
-    </div>
+    
+    {% with selected="myTickets" %}
+      {% include "header.html" %}
+    {% endwith %}
     <h1>My tickets</h1>
     <table>
         <tr>
@@ -54,5 +47,9 @@
         <tr class="blank-row"><td colspan="10"></td></tr>
         <tr class="blank-row"><td colspan="10"></td></tr>
     </table>
+    
+    {% include "loginRegisterWindow.html" %}
+    
+    <script src="static/js/script.js"></script>
 </body>
 </html>

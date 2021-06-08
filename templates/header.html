@@ -1,0 +1,35 @@
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            {% if selected == "home" %}
+              <a href="/" class="open-tab">Home</a>
+            {% else %}
+              <a href="/">Home</a>
+            {% endif %}
+            {% if selected == "arrivalsDepartures" %}
+              <a href="./arrivalsDepartures" class="open-tab">Arrivals & Departures</a>
+            {% else %}
+              <a href="./arrivalsDepartures">Arrivals & Departures</a>
+            {% endif %}
+            {% if selected == "tickets" %}
+              <a href="./Tickets" class="open-tab">Tickets</a>
+            {% else %}
+              <a href="./Tickets">Tickets</a>
+            {% endif %}
+            {% if selected == "myTickets" %}
+              <a href="./myTickets" class="open-tab">My tickets</a>
+            {% else %}
+              <a href="./myTickets">My tickets</a>
+            {% endif %}
+            {% if selected == "administrator" %}
+              <a href="./administrator" class="open-tab">Administrator</a>
+            {% else %}
+              <a href="./administrator">Administrator</a>
+            {% endif %}
+            {% if loggedIn %}
+              <a id="logout" href="">Log out</a>
+            {% else %}
+              <a id="login" href="#">Log in</a>
+            {% endif %}
+        </nav>
+    </div>

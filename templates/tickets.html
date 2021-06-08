@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/tickets.css">
+    <title>Get Ticket</title>
+</head>
+<body>
+    
+    {% with selected="tickets" %}
+      {% include "header.html" %}
+    {% endwith %}
+    
+    <div id="frame">
+      <button class="input">Riga <span>RIX</span></button>
+      <br>
+      <div class="parent">
+        <img src="static/img/switchArrow.png" alt="to">
+        <img src="static/img/greyCircle.png" alt="circle">
+      </div>
+      <br>
+      <button class="input">Stockholm <span>ARN</span></button>
+      <button id="select">Select dates</button>
+    </div>
+
+    {% include "loginRegisterWindow.html" %}
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

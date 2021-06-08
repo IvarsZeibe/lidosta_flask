@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/arrivalsDepartures.css">
+    <title>Arrivals & Departures</title>
+</head>
+
+<body>
+    <div id="header">
+        <img id="logo" src="static/img/Logo.png">
+        <nav>
+            <a href="/">Home</a>
+            <a href="./arrivalsDepartures" class="open-tab">Arrivals & Departures</a>
+            <a href="./Tickets">Tickets</a>
+            <a href="./myTickets">My tickets</a>
+            <a href="./administrator">Administrator</a>
+            <a id="logout" href="#">Log out</a>
+        </nav>
+      </div>
+
+     <table class="rix-arrivals-table">
+        <thead>
+            <tr>
+                <th>Arrival</th>
+                <th>Scheduled time</th>
+                <th>Estimated time</th>
+                <th>Flight number</th>
+                <th>From</th>
+                <th>Sector</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>05.06.2021</th>
+                <th>13:50</th>
+                <th>13:51</th>
+                <th>AY1073</th>
+                <th>Helsinki/HEL</th>
+                <th>E</th>
+                <th>ARRIVED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>14:45</th>
+                <th>14:34</th>
+                <th>BT696</th>
+                <th>Nice/NCE</th>
+                <th>E</th>
+                <th>ARRIVED</th>
+            </tr>
+            <tr>
+                <th>05.06.2021</th>
+                <th>14:55</th>
+                <th>14:51</th>
+                <th>BT612</th>
+                <th>Athens/ATH</th>
+                <th>E</th>
+                <th>ARRIVED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>15:45</th>
+                <th>15:36</th>
+                <th>W62532</th>
+                <th>Dortmund/DTM</th>
+                <th>E</th>
+                <th>APPROACHING</th>
+            </tr>
+            <tr>
+                <th>05.06.2021</th>
+                <th>16:15</th>
+                <th>15:45</th>
+                <th>BT7702</th>
+                <th>Stockholm/ARN</th>
+                <th>E</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>13:45</th>
+                <th>15:52</th>
+                <th>6Y262</th>
+                <th>Antalya/AYT</th>
+                <th>C</th>
+                <th>DELAYED</th>
+            </tr>
+            <tr>
+                <th>05.06.2021</th>
+                <th>17:20</th>
+                <th>17:20</th>
+                <th>AY1075</th>
+                <th>Helsinki/HEL</th>
+                <th>E</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>17:35</th>
+                <th>17:35</th>
+                <th>LO781</th>
+                <th>Warsaw/WAW</th>
+                <th>E</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr>
+                <th>05.06.2021</th>
+                <th>19:05</th>
+                <th>18:51</th>
+                <th>SU2680</th>
+                <th>Moscow/SVO</th>
+                <th>C</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>19:10</th>
+                <th>19:10</th>
+                <th>BT7736</th>
+                <th>Antalya/AYT</th>
+                <th>C</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr>
+                <th>05.06.2021</th>
+                <th>19:40</th>
+                <th>19:40</th>
+                <th>FR4482</th>
+                <th>Barcelona/BCN</th>
+                <th>E</th>
+                <th>SCHEDULED</th>
+            </tr>
+            <tr class="active-row">
+                <th>05.06.2021</th>
+                <th>20:30</th>
+                <th>20:30</th>
+                <th>FR4714</th>
+                <th>Milan/BGY</th>
+                <th>E</th>
+                <th>SCHEDULED</th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    {% include "loginRegisterWindow.html" %}
+    
+  <script src="static/js/script.js"></script>
+</body>
+</html>
+
+<!-- API funkcionalitāte, dati konsolē
+    <script>
+        const params = new URLSearchParams({
+            access_key: "3270b3e61d678ca262943ea3fa64a0a0",
+            limit: 10
+        });
+
+        const api_url = `http://api.aviationstack.com/v1/routes?${params}`;
+
+        async function getData() {
+            const response = await fetch(api_url);
+            const data = await response.json();
+            console.log(data);
+
+        }
+
+        getData();
+    </script>
+//-->

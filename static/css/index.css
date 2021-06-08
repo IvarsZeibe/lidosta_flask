@@ -149,20 +149,6 @@ p{
     margin-right: auto;
 }
 
-#footer{
-    background-color: #2761FF;
-    padding: 0px 100px 40px 100px;
-    vertical-align: middle;
-}
-#footer{
-    font-size: 18px;
-    color: white;
-    line-height: 200%;
-    font-weight: normal;
-}
-#footer span{
-    float: right;
-}
 #analyse-manage{
     background-color: #FAFAFA;
     text-align: center;
